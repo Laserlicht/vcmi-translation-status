@@ -91,6 +91,7 @@ def get_translation_mods_translation():
     data = {}
     for key, value in translation_mods.items():
         tmp = {}
+        print(value[1])
         for item in value[1]["translations"]:
             base_url = value[0].rsplit('/', 1)[0] + "/content/"
             try:
